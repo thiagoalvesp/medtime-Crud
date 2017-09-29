@@ -1,0 +1,13 @@
+<h5>
+  Detalhes da Pessoa
+</h5>
+
+<p>Id: {{ pessoa.id }}</p>
+<p>Nome: {{ pessoa.nome }}</p>
+<p>CPF: {{ pessoa.cpf }}</p>
+
+<a class="waves-effect waves-light btn" 
+  (click)="editarPessoa()">Editar</a>
+
+<a class="waves-effect waves-light btn" 
+  (click)="removerPessoa()">Remover</a>

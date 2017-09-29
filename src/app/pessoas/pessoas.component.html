@@ -1,0 +1,23 @@
+<div class="row">
+
+  <div class="col s6">
+    <p>
+      Lista de Pessoas
+    </p>
+
+    <div class="collection">
+      <a class="collection-item" *ngFor="let pessoa of pessoas" [routerLink]="[pessoa.id]">
+      {{ pessoa.nome }}
+      </a>
+    </div>
+
+  </div>
+
+  <div class="col s6">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large waves-effect waves-light red" (click)="adicionarPessoa()"><i class="material-icons">add</i></a>
+</div>
